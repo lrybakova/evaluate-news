@@ -1,8 +1,8 @@
+
 const path = require('path')
 const express = require('express')
-const apiRequest = require('../src/utils/apirequest.js')
+const apiRequest = require('./utils/apirequest.js')
 const cors = require('cors')
-const PORT = process.env.PORT
 
 
 const app = express()
@@ -40,6 +40,4 @@ app.get('/api', (req, res) => {
 app.get('/*', (req, res) => {
   res.end('404')
 })
-app.listen(PORT, () => {
-  console.log('Server is running at the port 3000')
-})
+module.exports = app
