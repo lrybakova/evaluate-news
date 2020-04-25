@@ -18,6 +18,7 @@ app.get('/api', (req, res) => {
   if (!req.query.text) {
     return res.send({
       error: 'You must provide a text'
+      
     })
   } else {
     const text = req.query.text

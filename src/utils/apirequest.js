@@ -24,6 +24,7 @@ const apiRequest = (text, callback) => {
           polarity: body.polarity,
           subjectivity: body.subjectivity,
           polarityConfidence: body.polarity_confidence,
+          
           subjectivityConfidence: body.subjectivity_confidence
         })
       }

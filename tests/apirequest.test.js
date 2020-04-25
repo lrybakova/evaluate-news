@@ -9,7 +9,8 @@ test('should make request to API and return non-error answer', () => {
       return res.send({ error })
     } else {
       return data
+    
     }
-    data.body.polarity !== 0;
+  
   })
 })

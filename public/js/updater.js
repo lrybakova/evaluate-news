@@ -14,5 +14,6 @@ const messageFour = document.querySelector('#message-4')
     messageFour.textContent = 'Subjectivity confidence: ' + data.subjectivityConfidence
     
   }
+  
 })}
 

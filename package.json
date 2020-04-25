@@ -20,6 +20,7 @@
     "webpack-cli": "^3.3.11"
   },
   "devDependencies": {},
+  
   "scripts": {
     "build": "webpack",
     "test": "jest --watch",
