@@ -3,18 +3,25 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
   },
   "keywords": [],
   "author": "L Rybakova",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "jest": "^25.4.0",
-    "request": "^2.88.2"
+    "nodemon": "^2.0.3",
+    "request": "^2.88.2",
+    "supertest": "^4.0.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "env-cmd": "^10.1.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lrybakova/evaluate-news.git"

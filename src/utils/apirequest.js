@@ -1,4 +1,6 @@
 const request = require('request')
+const dotenv = require('dotenv');
+dotenv.config();
 
 
 const apiRequest = (text, callback) => {
@@ -8,8 +10,8 @@ const apiRequest = (text, callback) => {
       url: url,
       json: true,
       headers: {
-        'X-AYLIEN-TextAPI-Application-Key': '51fc31345a0bb4f01edb4659f3e3748f',
-        'X-AYLIEN-TextAPI-Application-ID': 'e5b72823'
+        'X-AYLIEN-TextAPI-Application-Key': process.env.API_KEY,
+        'X-AYLIEN-TextAPI-Application-ID': process.env.API_ID
       },
     }, (error, {body}={}) => {
       if (error) {
